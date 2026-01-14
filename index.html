@@ -4,58 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weronika & Dawid</title>
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Montserrat', sans-serif;
-            background-color: #fdfaf5; /* Bardzo jasny, czysty beż */
-            color: #5d544b;
+            /* Głęboka czerń z delikatnymi, ciemnozłotymi serduszkami */
+            background-color: #1a1a1a; 
+            background-image: url('data:image/svg+xml;utf8,<svg width="60" height="60" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><path d="M50 85L30 65A25 25 0 0 1 50 25A25 25 0 0 1 70 65L50 85Z" fill="%23d4af37" opacity="0.1"/></svg>');
+            background-size: 50px 50px;
+            color: #f1f1f1;
             text-align: center;
             display: flex;
             align-items: center;
             justify-content: center;
-            height: 100vh;
+            min-height: 100vh;
             margin: 0;
         }
         .container {
             max-width: 400px;
             width: 85%;
-            background: white;
-            padding: 40px 25px;
-            border-radius: 20px;
-            /* Delikatny cień, żeby strona wyglądała lekko */
-            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
-            border: 1px solid #eee4d5;
+            background: rgba(40, 40, 40, 0.9); /* Ciemny kontener */
+            padding: 45px 25px;
+            border-radius: 25px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+            border: 1px solid #d4af37; /* Złota ramka wokół projektu */
         }
         h1 {
             font-family: 'Great Vibes', cursive;
-            color: #bfae9a; /* Piaskowy beż / złoto */
-            font-size: 3.5em;
-            margin: 0 0 30px 0;
+            color: #d4af37; /* Kolor złoty */
+            font-size: 3.8em;
+            margin: 0 0 35px 0;
             font-weight: normal;
         }
         .btn {
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 16px;
-            margin: 15px 0;
-            background-color: #e8e0d5; /* Beżowy przycisk Boho */
-            color: #5d544b;
+            padding: 18px;
+            margin: 20px 0;
+            background-color: transparent; 
+            color: #d4af37; /* Złoty tekst */
             text-decoration: none;
-            border-radius: 12px;
+            border-radius: 15px;
             font-weight: 500;
             font-size: 1.1em;
+            border: 2px solid #d4af37; /* Złoty obrys przycisku */
             transition: all 0.3s ease;
         }
-        /* Efekt po kliknięciu */
+        /* Efekt po dotknięciu/kliknięciu */
         .btn:active {
-            background-color: #d9cebf;
-            transform: scale(0.98);
+            background-color: #d4af37;
+            color: #1a1a1a;
+            transform: scale(0.97);
         }
         .icon {
-            margin-right: 12px;
-            font-size: 1.3em;
+            margin-right: 15px;
+            font-size: 1.4em;
         }
     </style>
 </head>
@@ -64,11 +68,11 @@
     <div class="container">
         <h1>Weronika & Dawid</h1>
         
-        <a href="https://www.google.com/maps/search/?api=1&query=Parafia+Rzymskokatolicka+pw.+Chrystusa+Króla+Stolarzowice+Bytom" class="btn">
+        <a href="https://www.google.com/maps/dir/?api=1&destination=Parafia+pw.+Chrystusa+Króla+Bytom+Stolarzowice" class="btn">
             <span class="icon">⛪</span> DOJAZD DO KOŚCIOŁA
         </a>
 
-        <a href="https://www.google.com/maps/search/?api=1&query=Restauracja+Pod+Progiem+Bytom" class="btn">
+        <a href="https://www.google.com/maps/dir/?api=1&destination=Restauracja+Pod+Progiem+Bytom" class="btn">
             <span class="icon">🍴</span> DOJAZD NA SALĘ
         </a>
     </div>
